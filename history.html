@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Boxes with Photos and Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeedfb;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .box {
+            width: 100%;
+            background-color: rgba(211, 209, 209, 0.852);
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .box-content {
+            display: flex;
+            padding: 15px;
+        }
+        .box img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .details {
+            flex-grow: 1;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .location, .price, .quantity {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        .quantity {
+            font-weight: bold;
+            color: #333;
+        }
+        .purchase-header {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="purchase-header">Your Purchase</div>
+    <div class="container">
+        <div class="box">
+            <div class="box-content">
+                <img src="C:\Users\Panther\OneDrive\Desktop\LPU\Html Class [CSE326]\CA03\imgfiles\cse section.jpeg" alt="Event 1">
+                <div class="details">
+                    <div class="name">CSE section of 2k24</div>
+                    <div class="location">by~ Dcy</div>
+                    <div class="price">₹250.00</div>
+                    <div class="quantity">X2</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <img src="C:\Users\Panther\OneDrive\Desktop\LPU\Html Class [CSE326]\CA03\imgfiles\enterprenuer.jpeg" alt="Event 2">
+                <div class="details">
+                    <div class="name">Enterpreneur skills</div>
+                    <div class="location">by~ department of enterprenuer & startups</div>
+                    <div class="price">₹300.00</div>
+                    <div class="quantity">X1</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <img src="C:\Users\Panther\OneDrive\Desktop\LPU\Html Class [CSE326]\CA03\imgfiles\alfaz.jpeg" alt="Event 3">
+                <div class="details">
+                    <div class="name">Alfaz</div>
+                    <div class="location">by~ Laosis</div>
+                    <div class="price">₹49</div>
+                    <div class="quantity">X3</div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <img src="C:\Users\Panther\OneDrive\Desktop\LPU\Html Class [CSE326]\CA03\imgfiles\WhatsApp Image 2024-09-23 at 11.53.53 PM.jpeg" alt="Event 4">
+                <div class="details">
+                    <div class="name">Tech Conference</div>
+                    <div class="location">by~ Noding Block</div>
+                    <div class="price">₹199.99</div >
+                    <div class="quantity">X1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
